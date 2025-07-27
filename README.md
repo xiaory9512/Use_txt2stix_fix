@@ -111,20 +111,12 @@ This will:
 
 #### Standard Mode (Regex-based)
 ```bash
-python batch_process_custom.py \
-    --input_dir clean_input_texts \
-    --output_dir output_stix \
-    --modes standard \
-    --extractions "pattern_*"
+python batch_process_custom.py --input_dir clean_input_texts --output_dir output_stix --modes standard --extractions "pattern_*"
 ```
 
 #### AI Mode (GPT-4)
 ```bash
-python batch_process_custom.py \
-    --input_dir clean_input_texts \
-    --output_dir output_stix \
-    --modes gpt4o \
-    --extractions "pattern_*,ai_*"
+python batch_process_custom.py --input_dir clean_input_texts --output_dir output_stix --modes gpt4o --extractions "pattern_*,ai_*"
 ```
 
 #### Multiple Modes
