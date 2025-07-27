@@ -1,0 +1,31 @@
+On December 29, 2016, the Department of Homeland Security (DHS)
+and Federal Bureau of Investigation (FBI) released a Joint Analysis
+Report confirming FireEye’s long held public assessment that the Russian
+Government sponsors APT28. Since at least 2007, APT28 has engaged
+
+in extensive operations in support of Russian strategic interests.
+
+The group, almost certainly compromised of a sophisticated and prolific
+set of developers and operators, has historically collected intelligence on
+defense and geopolitical issues. APT28 espionage activity has primarily
+targeted entities in the U.S., Europe, and the countries of the former
+Soviet Union, including governments and militaries, defense attaches,
+media entities, and dissidents and figures opposed to the current Russian
+Government.
+
+Over the past two years, Russia appears to have increasingly leveraged
+APT28 to conduct information operations commensurate with broader
+strategic military doctrine. After compromising a victim organization,
+APT28 will steal internal data that is then leaked to further political
+narratives aligned with Russian interests. To date these have included
+
+the conflict in Syria, NATO-Ukraine relations, the European Union refugee
+and migrant crisis, the 2016 Olympics and Paralympics Russian athlete
+doping scandal, public accusations regarding Russian state-sponsored
+hacking, and the 2016 U.S. presidential election.
+
+This report details our observations of APT28’s
+targeting, and our investigation into a related
+breach. We also provide an update on shifts in the y,
+group's tool development and use, and summarize :
+the tactics APT28 employs to compromise its victims.
