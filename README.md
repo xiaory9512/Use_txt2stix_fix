@@ -121,11 +121,7 @@ python batch_process_custom.py --input_dir clean_input_texts --output_dir output
 
 #### Multiple Modes
 ```bash
-python batch_process_custom.py \
-    --input_dir clean_input_texts \
-    --output_dir output_stix \
-    --modes standard,gpt4o \
-    --extractions "pattern_*,ai_*"
+python batch_process_custom.py --input_dir clean_input_texts --output_dir output_stix --modes standard,gpt4o --extractions "pattern_*,ai_*"
 ```
 
 ## Command Options
@@ -183,35 +179,17 @@ python batch_process_custom.py --help
 
 ### Example 1: Basic Standard Processing
 ```bash
-python batch_process_custom.py \
-    --input_dir clean_input_texts \
-    --output_dir output_stix \
-    --modes standard \
-    --extractions "pattern_ipv4_address_only,pattern_url,pattern_md5_hash"
+python batch_process_custom.py --input_dir clean_input_texts --output_dir output_stix --modes standard --extractions "pattern_ipv4_address_only,pattern_url,pattern_md5_hash"
 ```
 
 ### Example 2: Advanced AI Processing
 ```bash
-python batch_process_custom.py \
-    --input_dir clean_input_texts \
-    --output_dir output_stix \
-    --modes gpt4o \
-    --extractions "pattern_*,lookup_mitre_attack_enterprise,ai_*" \
-    --tlp_level amber \
-    --confidence 85 \
-    --labels "apt,malware,threat-intel"
+python batch_process_custom.py --input_dir clean_input_texts --output_dir output_stix --modes gpt4o --extractions "pattern_*,lookup_mitre_attack_enterprise,ai_*" --tlp_level amber --confidence 85 --labels "apt,malware,threat-intel"
 ```
 
 ### Example 3: Direct txt2stix Command (Single File)
 ```bash
-python txt2stix.py \
-    --input_file clean_input_texts/report.txt \
-    --name "APT Report" \
-    --relationship_mode ai \
-    --ai_settings_extractions openai:gpt-4o \
-    --ai_settings_relationships openai:gpt-4o \
-    --use_extractions "pattern_*,ai_*" \
-    --ai_create_attack_flow
+python txt2stix.py --input_file clean_input_texts/report.txt --name "APT Report"  --relationship_mode ai --ai_settings_extractions openai:gpt-4o --ai_settings_relationships openai:gpt-4o --use_extractions "pattern_*,ai_*" --ai_create_attack_flow
 ```
 
 ## Output
