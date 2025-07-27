@@ -89,7 +89,7 @@ def process_single_file(txt_file_path, output_dir, mode_suffix, extractions,
     if extractions:
         cmd.extend(["--use_extractions", extractions])
 
-    # Add AI parameters if using AI mode
+    # AI parameters
     if ai_model and relationship_mode == "ai":
         cmd.extend(["--ai_settings_extractions", ai_model])
         cmd.extend(["--ai_settings_relationships", ai_model])
@@ -98,7 +98,10 @@ def process_single_file(txt_file_path, output_dir, mode_suffix, extractions,
     if additional_args:
         for arg, value in additional_args.items():
             if value is not None:
-                cmd.extend([f"--{arg}", str(value)])
+                if isinstance(value, bool) and value:
+                    cmd.append(f"--{arg}")
+                else:
+                    cmd.extend([f"--{arg}", str(value)])
 
     try:
         # Record existing bundle files in the output directory
